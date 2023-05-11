@@ -225,9 +225,7 @@ export class RegistrationPage {
         {
             console.log('data');
             console.log(this.data);
-            if(!this.data.whatsapp_mobile_no){
-                this.data.whatsapp_mobile_no="";
-            }
+          
             
             
             
@@ -279,7 +277,7 @@ export class RegistrationPage {
                             this.service.karigar_status=r['user'].status;
                             console.log(this.service.karigar_id);
                             
-                            if(r['user'].status !='Verified' && r['user'].user_type!=3)
+                            if(r['user'].status !='Verified' && r['user'].user_type!=2)
                             {
                                 // let contactModal = this.modalCtrl.create(AboutusModalPage);
                                 // contactModal.present();

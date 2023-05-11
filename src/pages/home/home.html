@@ -12,7 +12,7 @@
             </button>
         </ion-buttons> -->
 
-        <ion-buttons end class="mr10">
+        <ion-buttons end class="mr10" *ngIf="karigar_detail.user_type == 1">
             <button ion-button icon-only  (click)="gotoNotification()">
                 <ion-icon name="notifications" class="nt_icn" style="color: #bf9f62;" ></ion-icon>
                 <span *ngIf="notify_cn > 0" class="custom-point notification-count">{{notify_cn}}</span>

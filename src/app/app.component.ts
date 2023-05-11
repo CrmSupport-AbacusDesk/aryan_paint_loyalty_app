@@ -78,7 +78,7 @@ export class MyApp {
                             this.events.publish('data','1', Date.now());
                             return;
                         }
-                        else if(this.service.karigar_info.status == 'Verified' || r['karigar'].user_type==3)
+                        else if(this.service.karigar_info.status == 'Verified' || r['karigar'].user_type!=3)
                         {
                             // this.rootPage=HomePage;
                             this.nav.setRoot(HomePage)
@@ -88,7 +88,7 @@ export class MyApp {
                             }, 2000);
                             // this.rootPage=TabsPage;
                         } 
-                        else  if( this.service.karigar_info.status != 'Verified' && (this.service.karigar_info.status != 'Verified' && r['karigar'].user_type!=3))
+                        else  if( this.service.karigar_info.status != 'Verified' && (this.service.karigar_info.status != 'Verified' && r['karigar'].user_type!=2))
                         {
 
                             this.nav.push(AboutusModalPage)

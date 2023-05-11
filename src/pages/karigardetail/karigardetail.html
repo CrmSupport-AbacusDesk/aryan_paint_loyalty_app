@@ -41,7 +41,7 @@
                         <div class="dp">
                             <div class="dp-hidden">
                                 <img src="assets/imgs/man.svg" *ngIf="karigar_detail.profile ==''">
-                                <img src="{{upload_url+karigar_detail.profile}}" *ngIf="karigar_detail.profile" (click)="viewProfiePic()">
+                                <img src="{{uploadUrl+karigar_detail.profile}}" *ngIf="karigar_detail.profile" (click)="viewProfiePic()">
                             </div>
                             <a class="cmra-btn"><i class="material-icons" (click)="openeditprofile()">camera_alt</i></a>
                         </div>
@@ -99,12 +99,12 @@
                             <div class="tst_bx_prt">
                                 <div class="text-box">
                                     <div class="doc-box">
-                                        <img src="{{upload_url + karigar_detail.document_image}}" (click)="viewDoc()">
+                                        <img src="{{uploadUrl + karigar_detail.document_image}}" (click)="viewDoc()">
                                     </div>
                                 </div>
                                 <div class="text-box" *ngIf="karigar_detail.document_type == 'Aadharcard'">
                                     <div class="doc-box">
-                                        <img src="{{upload_url + karigar_detail.document_image_back}}" (click)="viewDoc()">
+                                        <img src="{{uploadUrl + karigar_detail.document_image_back}}" (click)="viewDoc()">
                                     </div>
                                 </div>
                             </div>

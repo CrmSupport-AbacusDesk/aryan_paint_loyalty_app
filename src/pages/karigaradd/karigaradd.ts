@@ -70,6 +70,7 @@ export class KarigaraddPage {
                 this.data.karigar_edit_id = this.data.id;
                 this.data.profile_edit_id = this.data.id;
                 this.data.doc_edit_id = this.data.id;
+                console.log(this.data.doc_edit_id);
                 
                 
                 // this.data.profile= this.data.profile;
